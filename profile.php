@@ -84,12 +84,7 @@ if (isset($_SESSION['user_id'])) {
             font-size: 30px;
             text-align: center;
         }
-
-        #bar a.btn {
-            display: inline-block;
-            margin: 0 10px;
-        }
-
+        
         #user_info {
             min-height: 100%;
             height: auto;

@@ -37,40 +37,37 @@ if (isset($_SESSION['user_id'])) {
         margin: 0;
     }
 
-    #logo {
-        width: 130px;
-        height: 130px;
-        position: relative;
-        object-fit: cover;
-        float: left;
-        margin-top: -50px;
-        margin-bottom: -55px;
-        margin-left: 50px;
-        display: block;
-    }
-
     #top_bar {
-        height: 5%;
-        background-color: #070707;
-        color: #d9dfeb;
-        padding: 5px;
-        padding-top: 20px;
-        padding-bottom: 10px;
-        display: input;
-    }
+            height: 5%;
+            background-color: #070707;
+            color: #d9dfeb;
+            padding: 5px;
+            padding-top: 20px;
+            padding-bottom: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-    .btn {
-        background-color: #070707;
-        height: 100%;
-        border: none;
-        color: white;
-        padding: 12px 16px;
-    }
+        #logo {
+            width: 130px;
+            height: 130px;
+            object-fit: cover;
+            margin-top: -50px;
+            margin-bottom: -55px;
+        }
 
-    /* Darker background on mouse-over */
-    .btn:hover {
-        color: #492A86;
-    }
+        .btn {
+            background-color: #070707;
+            height: 100%;
+            border: none;
+            color: white;
+            padding: 12px 16px;
+        }
+
+        .btn:hover {
+            color: #492A86;
+        }
 
     #searchbar {
         font-size: 30px;
@@ -264,10 +261,12 @@ if (isset($_SESSION['user_id'])) {
     <div id="top_bar">
         <div id="bar">
             <!-- Logo -->
-            <img src="upload\LogoWithName.png" id="logo">
+            <img src="upload/LogoWithName.png" id="logo">
             <a class="btn" href="homepage.php"><i class="fa fa-home fa-fw" aria-hidden="true"></i></a>
             <a class="btn" href="profile.php"><i class="fa fa-user fa-fw" aria-hidden="true"></i></a>
             <a class="btn" href="message.php"><i class="fa fa-comments fa-fw" aria-hidden="true"></i></a>
+            <a class="btn" href="signout.php" style="float: right;"><i class="fa fa-sign-out fa-fw" aria-hidden="true"></i></a>
+            <a class="btn" href="userprofile.php" style="float: right;"><i class="fa fa-cog fa-fw" aria-hidden="true"></i></a>
         </div>
     </div>
 
